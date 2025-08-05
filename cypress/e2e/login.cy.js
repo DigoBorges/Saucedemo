@@ -20,18 +20,19 @@ describe('login', () => {
 
 
 
-    /*it('Realizar Login com falha', () => {
+    it('Realizar Login com falha', () => {
 
         cy.visit('https://www.saucedemo.com/');
 
         // Preencher o campo de email
-        cy.get('[data-test="username"]').type('standard_user');
-        cy.get('[data-test="password"]').type('senha_errada');
+         cy.get(locators.Login.nome).type('standard_user');
+         cy.get(locators.Login.password).type('secret');
         // Clicar no botão de login
-        cy.get('[data-test="login-button"]').click();
+         cy.get(locators.Login.loginButton).click();
 
         // Verificar se a mensagem de erro é exibida
-        cy.get('[data-test="error"]').should('be.visible');
-    });*/
+        cy.get('[data-test="error"]').should('be.visible').and('contain', 'Epic sadface: Username and password do not match any user in this service');
+        cy.get('[data-test="error-button"]').click(); // Clicar no botão de erro para fechar a mensagem
+    });
 
 });
