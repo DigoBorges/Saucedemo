@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
     
 import locators from '../support/locators';
+import 'cypress-mochawesome-reporter/register';   
 
 describe('Menus burguer', () => {
     it('validar acesso aos menus', () => {

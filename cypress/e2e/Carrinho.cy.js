@@ -1,9 +1,10 @@
 /// <reference types="cypress" />
     
 import locators from '../support/locators';
+import 'cypress-mochawesome-reporter/register';
 
-describe('login', () => {
-    it('Realizar Login com sucesso', () => {
+describe('Carrinho', () => {
+    it('Realizar Compra com sucesso', () => {
 
         cy.visit('https://www.saucedemo.com/');
 

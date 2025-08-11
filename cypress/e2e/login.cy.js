@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
     
 import locators from '../support/locators';
+import 'cypress-mochawesome-reporter/register';
 
 describe('login', () => {
     it('Realizar Login com sucesso', () => {
