@@ -6,21 +6,19 @@ const locators = {
     loginButton: '[data-test="login-button"]',
     },
 
-    Msg_erro:{
-        errorMessage: '[data-test="error"]',
-    },
+   
     
-    Carrinho: {
-        addToCartBackpack: '[data-test="add-to-cart-sauce-labs-backpack"]',
-        cesta: '[data-test="shopping-cart-link"]',   
-        botaoCheckout: '[data-test="checkout"]',
-        primeiroNome: '[data-test="firstName"]',       
-        segundoNome: '[data-test="lastName"]',
-        caixaPostal: '[data-test="postalCode"]',                 
-        botaoContinuarCarrinho: '[data-test="continue"]',
-        finalizarCompra: '[data-test="finish"]',       
-        msgConclusaoCompra: '.complete-header',
-        backToProducts: '[data-test="back-to-products"]' 
+    Cadastro: {
+
+        primeiro_Nome : '[name="name"]',
+        sobrenome: '[name="lastName"]',
+        email: '[name="email"]',
+        senha: '[name="password"]',
+        repetir_senha: '[name="confirmPassword"]',
+        CPF:'[name="document1"]',
+        DT_Nasc:'[name="dateOfBirth"]',
+        Tel_Celular:'[name="phone1"]',
+        N_WhatsApp:'[name="whatsappNumber"]',
 
     },
         

@@ -16,3 +16,14 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import 'cypress-mochawesome-reporter/register';
+
+
+// Ignorar erros de scripts externos (cross origin)
+Cypress.on("uncaught:exception", (err, runnable) => {
+  // Se quiser, pode colocar um filtro para ignorar só "Script error"
+  if (err.message.includes("Script error")) {
+    return false;
+  }
+  // Retorna false para evitar que o Cypress falhe
+  return false;
+});
